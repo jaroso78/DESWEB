@@ -1,0 +1,5 @@
+#voy a ignorar todos los ficheros acabdos en json
+*.json
+#voy a ignorar todos los ficheros de configuración del proyecto.
+*.sublime-project
+*.sublime-workspace
