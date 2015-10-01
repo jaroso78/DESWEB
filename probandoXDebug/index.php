@@ -16,7 +16,7 @@
 			echo "Esto abarca
 			 	  múltiples lineas. los saltos de línea también 
 			      se mostrarán.";
-			 $numero=23;
+			 $numero=15;
 			 echo $numero;
 
 		?>
