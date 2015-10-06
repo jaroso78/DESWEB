@@ -1,3 +1,6 @@
+
+//Codigo de prueba
+
 <?php
 	function avatarCode($entrada)
 	{
