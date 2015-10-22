@@ -33,8 +33,6 @@ $menu= array(  //Definición del array con el menu y submenus.
 		)	
 	)
 );
-
-
 //Function menu para dibujar la menú.
 function menu($menu, $lang){
     foreach ($menu as $menukey => $value) { //Recorremos el array.

@@ -1,8 +1,9 @@
 <?php
 /*********************************************************
-PROYECTO 01    JAVIER RODRÍGUEZ SOLER.
+PROYECTO 02    JAVIER RODRÍGUEZ SOLER.
 *********************************************************/
 	include_once 'configuracion.php';
+	include_once 'dado.php';
 ?>
 <html>
 	<head>
@@ -14,7 +15,7 @@ PROYECTO 01    JAVIER RODRÍGUEZ SOLER.
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-
+	<!--APARTADO MENÚ-->
 	<nav class="navbar navbar-inverse">
 		<div class ="container-fluid">
 			<div class="navbar-header">
@@ -22,7 +23,44 @@ PROYECTO 01    JAVIER RODRÍGUEZ SOLER.
 					//Presentamos menú.
 	  				menu($menu, $lang);
 				?>
+		</div>
+	</nav>
+	<!--COLOCACIÓN DE LAS IMÁGENES EN PANTALLA-->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2">
+				<img src="img\dado-01.png"/>
 			</div>
-		</nav>
+			<div class="col-xs-2">
+				<img src="img\dado-02.png"/>
+			</div>
+			<div class="col-xs-2">
+				<img src="img\dado-03.png"/>
+			</div>
+			<div class="col-xs-2">
+				<img src="img\dado-04.png"/>
+			</div>
+			<div class="col-xs-2">
+				<img src="img\dado-05.png"/>
+			</div>
+			<div class="col-xs-2">
+				<img src="img\dado-06.png"/>
+			</div>
+		</div>
+	</div>
+	<!--COLOCAR BOTON Y SALIDA DEL RESULTADO -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2">
+				<h4>Dado aleatorio.</h4>
+			</div>
+			<div class="col-xs-2">
+				<?php
+					//EJECUTAMOS LA FUNCIÓN DADO PARA LANZAR EL LANZAMIENTO Y EL DIBUJO DEL DADO.
+					dado();
+				?>
+			</div>
+		<div>
+	</div>
 	</body>
 </html>
