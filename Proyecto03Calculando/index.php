@@ -1,6 +1,6 @@
 <?php
 /*********************************************************
-PROYECTO 02    JAVIER RODRÍGUEZ SOLER.
+PROYECTO 03    JAVIER RODRÍGUEZ SOLER.
 *********************************************************/
 	include_once 'configuracion.php';
 	include_once 'dado.php';
