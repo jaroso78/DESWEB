@@ -1,0 +1,22 @@
+.wrapper-images {
+position: relative;
+}
+
+.texto {
+background: transparent;
+color: blue;
+height: 50px;
+width: 100%;
+position:absolute;
+margin-left:0%;
+margin-bottom:7%;
+bottom:0px;
+}
+
+.oculto{
+    display:none;
+}
+
+.mostrar{
+    display:block
+}
