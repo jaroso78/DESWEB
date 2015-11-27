@@ -5,10 +5,17 @@ PROYECTO 03    JAVIER RODRÍGUEZ SOLER.
 	include_once 'lib/configuracion.php';
 	include_once 'lib/juego.php';
 	header('Content-Type:text/html;charset=utf-8'); //Codificación de los acentos.
+	
+	session_start(); 
+   
+   
+ if (!isset($jugador)) {
+        header('Location: /Proyecto04Mathdice/index.php');
+	}
 ?>
 <html>
 	<head>
-		<title>Proyecto 03 </title>
+		<title>Proyecto 04 </title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width", inistal-scale="1">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">

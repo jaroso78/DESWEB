@@ -1,6 +1,12 @@
 <?php
     include_once 'lib/configuracion.php';
 	include_once 'lib/juego.php';
+	session_start(); 
+  
+ if (!isset($jugador)) {
+        header('Location:index.php');
+	}
+	
     $calculo = $_POST['operacion'];
     $resultado = $_POST['resultado'];
     $dado1 = $_POST['dado1'];
@@ -15,6 +21,7 @@
 	$puntuacion = $jugador->getPuntuacion();
 	
 	
+   
 	?>
 	
 	<html>

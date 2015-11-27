@@ -6,14 +6,23 @@
  $apellido= $_POST['surname'];
  $email = $_POST['email'];
  $edad = $_POST['age'];
+ 
+   session_start(); 
+   
+   
+ if (!isset($jugador)) {
+        header('Location:../index.php');
+	}
 
-if ((isset($nombre) && $nombre != '')&&(isset($apellido)&&$apellido !='')&&(isset($email)&&$email!='')&&(isset($edad)&&$edad)){ 
+if ($nombre != '' && $apellido !='' && $email!='' && $edad !=''){ 
   //Creamos el objeto jugador y le pasamos los datos.
-  session_start(); 
+
   $_SESSION['jugador'] = new jugador ($nombre,$apellido,$email,$edad);
   header('Location:  ../pantalla_juego.php');
-}else {
- header('Location:  ../index.php');
 }
+ 
+
+
+
 
 ?>
