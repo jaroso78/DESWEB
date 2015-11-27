@@ -1,4 +1,11 @@
 <?php
+
+	session_start();
+	$jugador  = $_SESSION["jugador"];
+	if (!isset($jugador)) {
+        header('Location:index.php');
+	}
+	
     include_once 'lib/configuracion.php';
 	include_once 'lib/juego.php';
     $calculo = $_POST['operacion'];

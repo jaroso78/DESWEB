@@ -11,7 +11,7 @@
    
    
  if (!isset($jugador)) {
-        header('Location: /Proyecto04Mathdice/index.php');
+        header('Location:index.php');
 	}
 
 if ($nombre != '' && $apellido !='' && $email!='' && $edad !=''){ 
@@ -28,7 +28,7 @@ if ($nombre != '' && $apellido !='' && $email!='' && $edad !=''){
     $jugador -> setEdad($edad);
    }else
    {
-      header('Location: /Proyecto04Mathdice/perfil.php');
+      header('Location:../perfil.php');
    }
  
  

@@ -13,7 +13,7 @@ PROYECTO 03    JAVIER RODRÍGUEZ SOLER.
     session_start();
 	$jugador  = $_SESSION["jugador"];
 	if (!isset($jugador)) {
-        header('Location: /Proyecto04Mathdice/index.php');
+        header('Location:index.php');
 	}
 	
 	
