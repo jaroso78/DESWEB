@@ -1,12 +1,14 @@
 <?php
 
 //ALMACENAMOS LOS VALORES OBTENIDOS POR EL MÉTODO POST.
+
  $dado1 = $_POST['dado1'];
  $opciones= $_POST['opciones'];
  $dado2 = $_POST['dado2'];
  $dado1_aleatorio = $_POST['dado1_aleatorio'];
  $dado2_aleatorio = $_POST['dado2_aleatorio'];
- 
+
+
  //COMPROBAMOS QUE LOS VALORES OBTENIDOS COINCIDEN.
  if (($dado1 != $dado1_aleatorio) || ($dado2 != $dado2_aleatorio))
     {

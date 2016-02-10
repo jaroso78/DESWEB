@@ -3,11 +3,11 @@
 PROYECTO 01    JAVIER RODRÍGUEZ SOLER.
 *********************************************************/
 //Definición de variables.
-$lang="sp"; //Idioma.
+$lang="en"; //Idioma.
 $menu= array(  //Definición del array con el menu y submenus.
 	"titulo" =>array(
-		"sp"=>"Math dice",
-		"en"=>"Math say" 
+		"sp"=>"Math dado",
+		"en"=>"Math day" 
 	),
 	"portada" =>array(
 		"sp"=>"Inicio",
@@ -42,9 +42,9 @@ $menu= array(  //Definición del array con el menu y submenus.
 		<title>Proyecto 01 </title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width", inistal-scale="1">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
