@@ -1,0 +1,7 @@
+flordia_campus_info_homepage:
+    path:     /home
+    defaults: { _controller: FlordiaCampusInfoBundle:Default:index }
+
+flordia_campus_info_infopage:
+    path:     /info
+    defaults: { _controller: FlordiaCampusInfoBundle:Default:info }
