@@ -1,0 +1,24 @@
+alumnos_index:
+    path:     /
+    defaults: { _controller: "FlordiaCampusInfoBundle:Alumnos:index" }
+    methods:  GET
+
+alumnos_show:
+    path:     /{id}/show
+    defaults: { _controller: "FlordiaCampusInfoBundle:Alumnos:show" }
+    methods:  GET
+
+alumnos_new:
+    path:     /new
+    defaults: { _controller: "FlordiaCampusInfoBundle:Alumnos:new" }
+    methods:  [GET, POST]
+
+alumnos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FlordiaCampusInfoBundle:Alumnos:edit" }
+    methods:  [GET, POST]
+
+alumnos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FlordiaCampusInfoBundle:Alumnos:delete" }
+    methods:  DELETE

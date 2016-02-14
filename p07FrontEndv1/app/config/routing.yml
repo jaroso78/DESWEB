@@ -1,0 +1,11 @@
+flordia_campus_info:
+    resource: "@FlordiaCampusInfoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+homepage:
+    path:     /home
+    defaults: { _controller: FlordiaCampusInfoBundle:Default:index }

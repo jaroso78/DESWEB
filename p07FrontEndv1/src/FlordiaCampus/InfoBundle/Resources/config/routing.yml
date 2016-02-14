@@ -1,0 +1,15 @@
+flordia_campus_info_alumnos:
+    resource: "@FlordiaCampusInfoBundle/Resources/config/routing/alumnos.yml"
+    prefix:   /alumnos
+
+flordia_campus_info_horario:
+        resource: "@FlordiaCampusInfoBundle/Resources/config/routing/horario.yml"
+        prefix:   /horario
+
+flordia_campus_info_homepage:
+    path:     /home
+    defaults: { _controller: FlordiaCampusInfoBundle:Default:index }
+
+flordia_campus_info_infopage:
+    path:     /info
+    defaults: { _controller: FlordiaCampusInfoBundle:Default:info }

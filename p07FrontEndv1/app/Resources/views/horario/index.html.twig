@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Listado de horarios</h1>
+
+    <table  class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Hora de salida</th>
+                <th>Lugar d esalida</th>
+                <th>Hora de llegada</th>
+                <th>Lugar de llegada</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for horario in horarios %}
+            <tr>
+                <td><a href="{{ path('horario_show', { 'id': horario.id }) }}">{{ horario.id }}</a></td>
+                <td>{% if horario.horaSalida %}{{ horario.horaSalida|date('H:i:s') }}{% endif %}</td>
+                <td>{{ horario.lugarDeSalida }}</td>
+                <td>{% if horario.horaDeLlegada %}{{ horario.horaDeLlegada|date('H:i:s') }}{% endif %}</td>
+                <td>{{ horario.lugarDeLlegada }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('horario_show', { 'id': horario.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('horario_edit', { 'id': horario.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('horario_new') }}">Nueva entrada.</a>
+        </li>
+    </ul>
+{% endblock %}
