@@ -1,6 +1,9 @@
 <?php
  	include_once 'lib/configuracion.php';
 	include_once 'lib/juego.php';
+	require_once ("lib/bd.php");
+	$basededatos = new BD();
+	
 	session_start(); 
 	$jugador= $_SESSION["jugador"];
 	
@@ -87,7 +90,8 @@
 				<?php  
 					$juego = new juegoSimple($resultado,$octogono);
 					$jugador-> setPuntuacion ($juego->resultado($puntuacion));
-					
+					$id = $jugador->getId();
+					$basededatos->actualizarPuntuacion($id,$puntuacion);
 				?>
 			</div>
 					
